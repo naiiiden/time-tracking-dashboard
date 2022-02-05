@@ -63,9 +63,9 @@ main {
     }
 
     .desktop_row {
-        // border: 1px solid red;
-        // width: 100%;
-        // height: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
 
         .stats_container {
             height: 8rem;
@@ -89,7 +89,11 @@ main {
                     h2 {
                         color: #fff;
                         font-weight: 500;
-                        font-size: 1.25rem;
+                        font-size: 1.15rem;
+                    }
+
+                    svg {
+                        fill: #bbc0ff;
                     }
                 }
 
@@ -121,6 +125,55 @@ main {
             background-position-x: 90%;
             background-position-y: -12.5%;
             background-size: 4rem; 
+        }
+
+        .play {
+            background: $soft-blue;
+            border-radius: 1rem;
+            background-image: url("../images/icon-play.svg");
+            background-repeat: no-repeat;
+            background-position-x: 90%;
+            background-position-y: -12.5%;
+            background-size: 4rem;
+        }
+
+        .study {
+            background: $light-red;
+            border-radius: 1rem;
+            background-image: url("../images/icon-study.svg");
+            background-repeat: no-repeat;
+            background-position-x: 90%;
+            background-position-y: -12.5%;
+            background-size: 4rem;
+        }
+
+        .exercise {
+            background: $lime-green;
+            border-radius: 1rem;
+            background-image: url("../images/icon-exercise.svg");
+            background-repeat: no-repeat;
+            background-position-x: 90%;
+            background-size: 4rem;
+        }
+
+        .social {
+            background: $violet;
+            border-radius: 1rem;
+            background-image: url("../images/icon-social.svg");
+            background-repeat: no-repeat;
+            background-position-x: 90%;
+            background-position-y: -25%;
+            background-size: 3.5rem;
+        }
+
+        .selfcare {
+            background: $soft-orange;
+            border-radius: 1rem;
+            background-image: url("../images/icon-self-care.svg");
+            background-repeat: no-repeat;
+            background-position-x: 90%;
+            background-position-y: -17.5%;
+            background-size: 3.5rem;
         }
     }
 }

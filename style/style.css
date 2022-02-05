@@ -104,6 +104,17 @@ main .buttons_name_container .buttons_container button.active {
   transition: .2s;
 }
 
+main .desktop_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+}
+
 main .desktop_row .stats_container {
   height: 8rem;
   display: -webkit-box;
@@ -147,7 +158,11 @@ main .desktop_row .stats_container .stats .title_more {
 main .desktop_row .stats_container .stats .title_more h2 {
   color: #fff;
   font-weight: 500;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
+}
+
+main .desktop_row .stats_container .stats .title_more svg {
+  fill: #bbc0ff;
 }
 
 main .desktop_row .stats_container .stats .toggleable_text {
@@ -182,5 +197,54 @@ main .desktop_row .work {
   background-position-x: 90%;
   background-position-y: -12.5%;
   background-size: 4rem;
+}
+
+main .desktop_row .play {
+  background: #56c2e6;
+  border-radius: 1rem;
+  background-image: url("../images/icon-play.svg");
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-position-y: -12.5%;
+  background-size: 4rem;
+}
+
+main .desktop_row .study {
+  background: #ff5c7c;
+  border-radius: 1rem;
+  background-image: url("../images/icon-study.svg");
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-position-y: -12.5%;
+  background-size: 4rem;
+}
+
+main .desktop_row .exercise {
+  background: #4acf81;
+  border-radius: 1rem;
+  background-image: url("../images/icon-exercise.svg");
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-size: 4rem;
+}
+
+main .desktop_row .social {
+  background: #7536d3;
+  border-radius: 1rem;
+  background-image: url("../images/icon-social.svg");
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-position-y: -25%;
+  background-size: 3.5rem;
+}
+
+main .desktop_row .selfcare {
+  background: #f1c65b;
+  border-radius: 1rem;
+  background-image: url("../images/icon-self-care.svg");
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-position-y: -17.5%;
+  background-size: 3.5rem;
 }
 /*# sourceMappingURL=style.css.map */
