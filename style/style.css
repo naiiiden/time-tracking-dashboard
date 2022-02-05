@@ -103,4 +103,84 @@ main .buttons_name_container .buttons_container button.active {
   -webkit-transition: .2s;
   transition: .2s;
 }
+
+main .desktop_row .stats_container {
+  height: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+main .desktop_row .stats_container .stats {
+  height: 6rem;
+  border-radius: .75rem;
+  padding: 1rem;
+  background: #1c1f4a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .desktop_row .stats_container .stats .title_more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .desktop_row .stats_container .stats .title_more h2 {
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+main .desktop_row .stats_container .stats .toggleable_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .desktop_row .stats_container .stats .toggleable_text span {
+  color: #fff;
+  font-size: 1.75rem;
+  font-weight: 300;
+}
+
+main .desktop_row .stats_container .stats .toggleable_text span.last {
+  font-size: .9rem;
+  color: #bdc1ff;
+  font-weight: 400;
+}
+
+main .desktop_row .work {
+  background: #ff8c66;
+  border-radius: 1rem;
+  background-image: url("../images/icon-work.svg");
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-position-y: -12.5%;
+  background-size: 4rem;
+}
 /*# sourceMappingURL=style.css.map */
