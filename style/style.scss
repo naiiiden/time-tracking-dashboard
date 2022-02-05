@@ -23,9 +23,12 @@ body {
     width: 100%;
     min-height: 100vh;
     font-family: Rubik, sans-serif;
+    background: $very-dark-blue;
 }
 
 img {
     max-width: 100%;
     height: auto;
 }
+
+@import "./main";

@@ -10,10 +10,97 @@ body {
   width: 100%;
   min-height: 100vh;
   font-family: Rubik, sans-serif;
+  background: #0f1424;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+main {
+  padding: 3rem 1.5rem;
+}
+
+main .buttons_name_container {
+  background: #1c1f4a;
+  border-radius: 1rem;
+  height: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .buttons_name_container .avatar_name_container {
+  background: #5847eb;
+  padding: 1.5rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: .75rem;
+  border-radius: 1rem;
+  height: 7.5rem;
+}
+
+main .buttons_name_container .avatar_name_container .avatar {
+  width: 58px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+main .buttons_name_container .avatar_name_container .text_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: .25rem;
+}
+
+main .buttons_name_container .avatar_name_container .text_container small {
+  color: #bdc1ff;
+  font-weight: 500;
+}
+
+main .buttons_name_container .avatar_name_container .text_container h1 {
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+main .buttons_name_container .buttons_container {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .buttons_name_container .buttons_container button {
+  border: none;
+  background: transparent;
+  font-size: 1rem;
+  font-family: inherit;
+  color: #6f76c8;
+}
+
+main .buttons_name_container .buttons_container button.active {
+  color: #fff;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 /*# sourceMappingURL=style.css.map */
