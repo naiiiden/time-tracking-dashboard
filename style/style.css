@@ -22,6 +22,28 @@ main {
   padding: 3rem 1.5rem;
 }
 
+main .desktop_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+}
+
+main .desktop_rows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+}
+
 main .buttons_name_container {
   background: #1c1f4a;
   border-radius: 1rem;
@@ -187,6 +209,7 @@ main .desktop_row .stats_container .stats .toggleable_text span.last {
   font-size: .9rem;
   color: #bdc1ff;
   font-weight: 400;
+  margin-top: .35rem;
 }
 
 main .desktop_row .work {
@@ -246,5 +269,40 @@ main .desktop_row .selfcare {
   background-position-x: 90%;
   background-position-y: -17.5%;
   background-size: 3.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    height: 100vh;
+  }
+  main .desktop_container {
+    width: 100%;
+  }
+  main .desktop_rows {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+  }
+  main .desktop_row {
+    width: 50%;
+  }
+  main .buttons_name_container .buttons_container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 3rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

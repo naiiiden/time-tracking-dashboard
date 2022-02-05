@@ -31,22 +31,22 @@ fetch("script/data.json")
       monthlyButton.classList.remove("active");
 
       work.textContent = data[0].timeframes.daily.current + "hrs";
-      workLast.textContent = `Last Week - ${data[0].timeframes.daily.previous}hrs`;
+      workLast.textContent = `Yesterday - ${data[0].timeframes.daily.previous}hrs`;
       
       play.textContent = data[1].timeframes.daily.current + "hrs";
-      playLast.textContent = `Last Week - ${data[1].timeframes.daily.previous}hrs`;
+      playLast.textContent = `Yesterday - ${data[1].timeframes.daily.previous}hrs`;
     
       study.textContent = data[2].timeframes.daily.current + "hrs";
-      studyLast.textContent = `Last Week - ${data[2].timeframes.daily.previous}hrs`;
+      studyLast.textContent = `Yesterday - ${data[2].timeframes.daily.previous}hrs`;
 
       exercise.textContent = data[3].timeframes.daily.current + "hrs";
-      exerciseLast.textContent = `Last Week - ${data[3].timeframes.daily.previous}hrs`;
+      exerciseLast.textContent = `Yesterday - ${data[3].timeframes.daily.previous}hrs`;
     
       social.textContent = data[4].timeframes.daily.current + "hrs";
-      socialLast.textContent = `Last Week - ${data[4].timeframes.daily.previous}hrs`;
+      socialLast.textContent = `Yesterday - ${data[4].timeframes.daily.previous}hrs`;
 
       selfcare.textContent = data[5].timeframes.daily.current + "hrs";
-      selfcareLast.textContent = `Last Week - ${data[5].timeframes.daily.previous}hrs`;
+      selfcareLast.textContent = `Yesterday - ${data[5].timeframes.daily.previous}hrs`;
     });
 
     weeklyButton.addEventListener("click", () => {
@@ -79,21 +79,21 @@ fetch("script/data.json")
       dailyButton.classList.remove("active");
 
       work.textContent = data[0].timeframes.monthly.current + "hrs";
-      workLast.textContent = `Last Week - ${data[0].timeframes.monthly.previous}hrs`;
+      workLast.textContent = `Last Month - ${data[0].timeframes.monthly.previous}hrs`;
     
       play.textContent = data[1].timeframes.monthly.current + "hrs";
-      playLast.textContent = `Last Week - ${data[1].timeframes.monthly.previous}hrs`;
+      playLast.textContent = `Last Month - ${data[1].timeframes.monthly.previous}hrs`;
     
       study.textContent = data[2].timeframes.monthly.current + "hrs";
-      studyLast.textContent = `Last Week - ${data[2].timeframes.monthly.previous}hrs`;
+      studyLast.textContent = `Last Month - ${data[2].timeframes.monthly.previous}hrs`;
     
       exercise.textContent = data[3].timeframes.monthly.current + "hrs";
-      exerciseLast.textContent = `Last Week - ${data[3].timeframes.monthly.previous}hrs`;
+      exerciseLast.textContent = `Last Month - ${data[3].timeframes.monthly.previous}hrs`;
 
       social.textContent = data[4].timeframes.monthly.current + "hrs";
-      socialLast.textContent = `Last Week - ${data[4].timeframes.monthly.previous}hrs`;
+      socialLast.textContent = `Last Month - ${data[4].timeframes.monthly.previous}hrs`;
     
       selfcare.textContent = data[5].timeframes.monthly.current + "hrs";
-      selfcareLast.textContent = `Last Week - ${data[5].timeframes.monthly.previous}hrs`;
+      selfcareLast.textContent = `Last Month - ${data[5].timeframes.monthly.previous}hrs`;
     });
   });
