@@ -191,7 +191,7 @@ main {
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
     main {
         display: flex;
         align-items: center;
@@ -216,6 +216,104 @@ main {
             .buttons_container {
                 justify-content: center;
                 gap: 3rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+
+        .desktop_container {
+            flex-direction: row;
+        }
+
+        .desktop_rows {
+            justify-content: space-between;
+        }
+
+        .desktop_row {
+            flex-direction: row;
+
+            .stats_container {
+                height: 14rem;
+                width: 14rem;
+
+                background-size: 5rem;
+
+                .stats {
+                    height: 11rem;
+
+                    &:hover {
+                        background: rgb(56, 60, 122);
+                        transition: .2s;
+                    }
+
+                    .title_more {
+                        svg {
+                            cursor: pointer;
+
+                            &:hover {
+                                fill: #fff;
+                                transition: .2s;
+                            }
+                        }
+                    }
+
+                    .toggleable_text {
+                        flex-direction: column;
+                        align-items: flex-start;
+
+                        span {
+                            font-size: 3rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .buttons_name_container {
+            height: 30rem;
+            width: 12.5rem;
+
+            .avatar_name_container {
+                height: 20rem;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: space-evenly;
+                padding: 1.5rem;    
+
+                .text_container {
+                    
+                    h1 {
+                        font-size: 2rem;
+                    }
+                }
+
+                .avatar {
+                    width: 80px;
+                }
+            }
+
+            .buttons_container {
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: space-around;
+                height: 10rem;
+
+                button {
+                    cursor: pointer;
+
+                    &:hover {
+                        color: #fff;
+                        transition: .2s;
+                    }
+                }
             }
         }
     }
