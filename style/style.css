@@ -76,7 +76,7 @@ main .buttons_name_container .buttons_container button {
   background: transparent;
   font-size: 1rem;
   font-family: inherit;
-  color: hsl(235deg, 45%, 61%);
+  color: #AAADDF;
 }
 main .buttons_name_container .buttons_container button.active {
   color: #fff;
